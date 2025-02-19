@@ -7,9 +7,9 @@ int partition(int *pInt, int start, int anEnd);
 
 void swap(int *pInt, int left, int right);
 
-int sum(const int a, const int b) {
+/*int sum(const int a, const int b) {
     return a + b;
-}
+}*/
 
 void quicksort(int arr[], int start, int end) {
     if (start >= end) return;
@@ -17,7 +17,13 @@ void quicksort(int arr[], int start, int end) {
     quicksort(arr, start, index - 1);
     quicksort(arr, index + 1, end);
 }
-
+/**
+ *
+ * @param pInt
+ * @param start
+ * @param anEnd
+ * @return
+ */
 int partition(int pInt[], int start, int anEnd) {
     int pivot = pInt[start];
     int left = start, right = anEnd;
