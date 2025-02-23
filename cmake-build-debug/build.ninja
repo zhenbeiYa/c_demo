@@ -41,6 +41,39 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/c_demo/cmake-build-debug/
 # =============================================================================
+# Object build statements for EXECUTABLE target pointer_array
+
+
+#############################################
+# Order-only phony target for pointer_array
+
+build cmake_object_order_depends_target_pointer_array: phony || CMakeFiles/pointer_array.dir
+
+build CMakeFiles/pointer_array.dir/04_day/pointer_array.c.obj: C_COMPILER__pointer_array_Debug C$:/c_demo/04_day/pointer_array.c || cmake_object_order_depends_target_pointer_array
+  DEP_FILE = CMakeFiles\pointer_array.dir\04_day\pointer_array.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\pointer_array.dir
+  OBJECT_FILE_DIR = CMakeFiles\pointer_array.dir\04_day
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pointer_array
+
+
+#############################################
+# Link the executable pointer_array.exe
+
+build pointer_array.exe: C_EXECUTABLE_LINKER__pointer_array_Debug CMakeFiles/pointer_array.dir/04_day/pointer_array.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\pointer_array.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = pointer_array.exe
+  TARGET_IMPLIB = libpointer_array.dll.a
+  TARGET_PDB = pointer_array.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target c_demo
 
 
@@ -262,6 +295,24 @@ build CMakeFiles/array_demo.dir/04_day/pointer.c.obj: C_COMPILER__array_demo_Deb
   OBJECT_DIR = CMakeFiles\array_demo.dir
   OBJECT_FILE_DIR = CMakeFiles\array_demo.dir\04_day
 
+build CMakeFiles/array_demo.dir/04_day/pointer2.c.obj: C_COMPILER__array_demo_Debug C$:/c_demo/04_day/pointer2.c || cmake_object_order_depends_target_array_demo
+  DEP_FILE = CMakeFiles\array_demo.dir\04_day\pointer2.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\array_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\array_demo.dir\04_day
+
+build CMakeFiles/array_demo.dir/04_day/pointer_array.c.obj: C_COMPILER__array_demo_Debug C$:/c_demo/04_day/pointer_array.c || cmake_object_order_depends_target_array_demo
+  DEP_FILE = CMakeFiles\array_demo.dir\04_day\pointer_array.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\array_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\array_demo.dir\04_day
+
+build CMakeFiles/array_demo.dir/06_day/function_define.c.obj: C_COMPILER__array_demo_Debug C$:/c_demo/06_day/function_define.c || cmake_object_order_depends_target_array_demo
+  DEP_FILE = CMakeFiles\array_demo.dir\06_day\function_define.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\array_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\array_demo.dir\06_day
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target array_demo
@@ -270,7 +321,7 @@ build CMakeFiles/array_demo.dir/04_day/pointer.c.obj: C_COMPILER__array_demo_Deb
 #############################################
 # Link the executable array_demo.exe
 
-build array_demo.exe: C_EXECUTABLE_LINKER__array_demo_Debug CMakeFiles/array_demo.dir/03_day/array_demo.c.obj CMakeFiles/array_demo.dir/04_day/array_exer.c.obj CMakeFiles/array_demo.dir/04_day/array_exr2.c.obj CMakeFiles/array_demo.dir/04_day/pointer.c.obj
+build array_demo.exe: C_EXECUTABLE_LINKER__array_demo_Debug CMakeFiles/array_demo.dir/03_day/array_demo.c.obj CMakeFiles/array_demo.dir/04_day/array_exer.c.obj CMakeFiles/array_demo.dir/04_day/array_exr2.c.obj CMakeFiles/array_demo.dir/04_day/pointer.c.obj CMakeFiles/array_demo.dir/04_day/pointer2.c.obj CMakeFiles/array_demo.dir/04_day/pointer_array.c.obj CMakeFiles/array_demo.dir/06_day/function_define.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\array_demo.dir
@@ -346,16 +397,38 @@ build array_exr2.exe: C_EXECUTABLE_LINKER__array_exr2_Debug CMakeFiles/array_exr
   TARGET_IMPLIB = libarray_exr2.dll.a
   TARGET_PDB = array_exr2.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target pointer2
+
 
 #############################################
-# Utility command for edit_cache
+# Order-only phony target for pointer2
 
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\c_demo\cmake-build-debug && "D:\devtools\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
+build cmake_object_order_depends_target_pointer2: phony || CMakeFiles/pointer2.dir
 
-build edit_cache: phony CMakeFiles/edit_cache.util
+build CMakeFiles/pointer2.dir/04_day/pointer2.c.obj: C_COMPILER__pointer2_Debug C$:/c_demo/04_day/pointer2.c || cmake_object_order_depends_target_pointer2
+  DEP_FILE = CMakeFiles\pointer2.dir\04_day\pointer2.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\pointer2.dir
+  OBJECT_FILE_DIR = CMakeFiles\pointer2.dir\04_day
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pointer2
+
+
+#############################################
+# Link the executable pointer2.exe
+
+build pointer2.exe: C_EXECUTABLE_LINKER__pointer2_Debug CMakeFiles/pointer2.dir/04_day/pointer2.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\pointer2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = pointer2.exe
+  TARGET_IMPLIB = libpointer2.dll.a
+  TARGET_PDB = pointer2.exe.dbg
 
 
 #############################################
@@ -370,6 +443,50 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Object build statements for EXECUTABLE target function_define
+
+
+#############################################
+# Order-only phony target for function_define
+
+build cmake_object_order_depends_target_function_define: phony || CMakeFiles/function_define.dir
+
+build CMakeFiles/function_define.dir/06_day/function_define.c.obj: C_COMPILER__function_define_Debug C$:/c_demo/06_day/function_define.c || cmake_object_order_depends_target_function_define
+  DEP_FILE = CMakeFiles\function_define.dir\06_day\function_define.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\function_define.dir
+  OBJECT_FILE_DIR = CMakeFiles\function_define.dir\06_day
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target function_define
+
+
+#############################################
+# Link the executable function_define.exe
+
+build function_define.exe: C_EXECUTABLE_LINKER__function_define_Debug CMakeFiles/function_define.dir/06_day/function_define.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\function_define.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = function_define.exe
+  TARGET_IMPLIB = libfunction_define.dll.a
+  TARGET_PDB = function_define.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\c_demo\cmake-build-debug && "D:\devtools\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build IoTest: phony IoTest.exe
@@ -382,9 +499,15 @@ build array_exr2: phony array_exr2.exe
 
 build c_demo: phony c_demo.exe
 
+build function_define: phony function_define.exe
+
 build hello: phony hello.exe
 
 build pointer: phony pointer.exe
+
+build pointer2: phony pointer2.exe
+
+build pointer_array: phony pointer_array.exe
 
 build test: phony test.exe
 
@@ -396,7 +519,7 @@ build test: phony test.exe
 #############################################
 # Folder: C:/c_demo/cmake-build-debug
 
-build all: phony c_demo.exe test.exe hello.exe array_exer.exe IoTest.exe array_demo.exe pointer.exe array_exr2.exe
+build all: phony pointer_array.exe c_demo.exe test.exe hello.exe array_exer.exe IoTest.exe array_demo.exe pointer.exe array_exr2.exe pointer2.exe function_define.exe
 
 # =============================================================================
 # Built-in targets

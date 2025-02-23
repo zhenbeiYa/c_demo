@@ -1,3 +1,4 @@
+C:/c_demo/cmake-build-debug/CMakeFiles/pointer_array.dir
 C:/c_demo/cmake-build-debug/CMakeFiles/c_demo.dir
 C:/c_demo/cmake-build-debug/CMakeFiles/test.dir
 C:/c_demo/cmake-build-debug/CMakeFiles/hello.dir
@@ -6,5 +7,7 @@ C:/c_demo/cmake-build-debug/CMakeFiles/IoTest.dir
 C:/c_demo/cmake-build-debug/CMakeFiles/array_demo.dir
 C:/c_demo/cmake-build-debug/CMakeFiles/pointer.dir
 C:/c_demo/cmake-build-debug/CMakeFiles/array_exr2.dir
-C:/c_demo/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/c_demo/cmake-build-debug/CMakeFiles/pointer2.dir
 C:/c_demo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/c_demo/cmake-build-debug/CMakeFiles/function_define.dir
+C:/c_demo/cmake-build-debug/CMakeFiles/edit_cache.dir
